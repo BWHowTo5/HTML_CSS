@@ -1,23 +1,29 @@
 .navigation{
-    .flexbox();
-    .centercenter();
-    position: fixed;
+    // .flexbox();
+    // .centercenter();
+    max-width: 800px;
+    // position: fixed;
 	width: 100%;
-    flex-direction: column;
-	background-color: @aero-green;
-    padding-bottom: 10px;
+    // flex-direction: column;
+    margin: 0 auto;
+	// background-color: @pastel-green;
+    // padding-bottom: 10px;
+    // border-radius: 10px;
     @media @phone {
         position: unset;
     }
     
     
     .navtitle{
+        .flexbox();
+        .centercenter();
         font-size: 4em;
         padding: 10px;
     }
 
     nav{
-    	.flexbox();
+        .flexbox();
+        .centercenter();
         margin-right: 50px;
         padding-top: 10px;
         @media @phone {
