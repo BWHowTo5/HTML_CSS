@@ -1,0 +1,45 @@
+.navigation{
+    .flexbox();
+    .centercenter();
+    position: fixed;
+	width: 100%;
+    flex-direction: column;
+	background-color: @aero-green;
+    padding-bottom: 10px;
+    @media @phone {
+        position: unset;
+    }
+    
+    
+    .navtitle{
+        font-size: 4em;
+        padding: 10px;
+    }
+
+    nav{
+    	.flexbox();
+        margin-right: 50px;
+        padding-top: 10px;
+        @media @phone {
+            margin-right: unset;
+            padding-top: unset;
+        }
+    }
+
+        a{
+        	text-decoration: none;
+        	color: @off-black;
+        	font-size: 2em;
+        	margin-left: 20px; 
+        	margin-right: 20px;
+            transition: 0.5s;
+            @media @phone {
+                font-size: 1.5em;
+            }
+        }
+            &:hover{
+        	color:black;
+        	border-bottom: 1px solid @off-black;
+            transition: 0.1s;
+            }
+}

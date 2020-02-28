@@ -1,3 +1,10 @@
+.flexbox {
+  display: flex;
+}
+.centercenter {
+  align-items: center;
+  justify-content: center;
+}
 html,
 body,
 div,
@@ -125,21 +132,228 @@ table {
 * {
   box-sizing: border-box;
 }
-body,
 html {
-  height: 100%;
   font-size: 62.5%;
-  background-image: url('../img/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
 }
-body,
-h1 {
-  font-family: "Raleway", sans-serif;
+html,
+body {
+  font-family: 'Source Sans Pro', Verdana;
+  color: #111;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bungee Inline', Impact;
+  color: 'Bungee Inline', Impact;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  background-color: #c9ffe2;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .navigation {
+    position: unset;
+  }
+}
+.navigation .navtitle {
+  font-size: 4em;
+  padding: 10px;
+}
+.navigation nav {
+  display: flex;
+  margin-right: 50px;
+  padding-top: 10px;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    margin-right: unset;
+    padding-top: unset;
+  }
+}
+.navigation a {
+  text-decoration: none;
+  color: #111;
+  font-size: 2em;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+@media (max-width: 500px) {
+  .navigation a {
+    font-size: 1.5em;
+  }
+}
+.navigation:hover {
+  color: black;
+  border-bottom: 1px solid #111;
+  transition: 0.1s;
+}
+footer {
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  background: #c9ffe2;
+  padding: 20px 0;
+  border: 1px double #b6f9c9;
+  border-radius: 10px;
+  display: flex;
+}
+.home .intro {
+  padding-top: 100px;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    padding-top: 10px;
+  }
+}
+.home .intro img {
+  border-radius: 5px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    position: relative;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .diy-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .diy-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.home .diy-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .diy-images .diy1 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .diy-images .diy2 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .diy-images .diy3 {
+    width: 90%;
+  }
+}
+.home .simplify-diy {
+  padding: 15px;
+}
+.home .simplify-diy h3 {
+  margin-top: 11px;
+}
+.home .simplify-diy p {
+  margin-top: 13px;
+}
+.home .cta {
+  margin-top: 60px;
+  border-top: 1px solid #4b7f52;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .cta {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    padding: 20px;
+  }
+}
+.home .cta .cta-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .cta .cta-text {
+    width: 100%;
+  }
+}
+.home .cta .cta-text h3 {
+  margin-bottom: 10px;
+}
+.home .cta .cta-text p {
+  margin-bottom: 26px;
+}
+.home .cta .cta-text .btn {
+  background: linear-gradient(to bottom, #454A59 5%, #81848E 100%);
+  background-color: #454A59;
+  border-radius: 5px;
+  border: 1px solid;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 12px 37px;
+}
+@media (max-width: 500px) {
+  .home .cta .cta-text .btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+.home .cta .cta-text .btn:hover {
+  background: linear-gradient(to bottom, #476E9E 5%, #7892C9 100%);
+  background-color: #476E9E;
+}
+.home .cta .diy4 {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .cta .diy4 {
+    width: 100%;
+    margin-left: unset;
+  }
+}
+.home .cta .diy4 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .cta .diy4 img {
+    height: unset;
+    padding-bottom: 20px;
+  }
 }
