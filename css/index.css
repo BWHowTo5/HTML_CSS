@@ -139,7 +139,7 @@ html,
 body {
   font-family: 'Source Sans Pro', Verdana;
   color: #111;
-  background-color: #7dd181;
+  background-color: #c9ffe2;
 }
 h1,
 h2,
@@ -160,12 +160,12 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 .navigation {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
