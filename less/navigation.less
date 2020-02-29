@@ -1,7 +1,11 @@
 .navigation{
-    max-width: 1000px;
-	width: 100%;
+    .flexbox();
+    justify-content: space-between;
+    background-color: @nav-bg;
+    color: @nav-font;
+    width: 100%;
     margin: 0 auto;
+    padding-bottom: 10px;
     @media @phone {
         position: unset;
     }
@@ -9,9 +13,14 @@
     
     .navtitle{
         .flexbox();
-        .centercenter();
-        font-size: 4em;
+        align-items: baseline;
+        font-size: 3em;
         padding: 10px;
+
+        h5 {
+            font-size: .25em;
+            font-family: @sub-font;
+        }
     }
 
     nav{
@@ -19,6 +28,8 @@
         .centercenter();
         margin-right: 50px;
         padding-top: 10px;
+        color: @nav-font;
+        
         @media @phone {
             margin-right: unset;
             padding-top: unset;
@@ -26,12 +37,12 @@
     }
 
         a{
-        	text-decoration: none;
-        	color: @off-black;
-        	font-size: 2em;
-        	margin-left: 20px; 
-        	margin-right: 20px;
+        	color: @nav-font;
+        	font-size: 1em;
+        	margin-left: 20px;
             transition: 0.5s;
+            text-decoration: none;
+            font-family: @mono-font;
             @media @phone {
                 font-size: 1.5em;
             }

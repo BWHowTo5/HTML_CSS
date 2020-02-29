@@ -139,7 +139,6 @@ html,
 body {
   font-family: 'Source Sans Pro', Verdana;
   color: #111;
-  background-color: #c9ffe2;
 }
 h1,
 h2,
@@ -165,9 +164,13 @@ p {
   margin: 0 auto;
 }
 .navigation {
-  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #4b7f52;
+  color: #eee;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 @media (max-width: 500px) {
   .navigation {
@@ -176,10 +179,13 @@ p {
 }
 .navigation .navtitle {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4em;
+  align-items: baseline;
+  font-size: 3em;
   padding: 10px;
+}
+.navigation .navtitle h5 {
+  font-size: 0.25em;
+  font-family: 'Bitter', Times;
 }
 .navigation nav {
   display: flex;
@@ -187,6 +193,7 @@ p {
   justify-content: center;
   margin-right: 50px;
   padding-top: 10px;
+  color: #eee;
 }
 @media (max-width: 500px) {
   .navigation nav {
@@ -195,12 +202,12 @@ p {
   }
 }
 .navigation a {
-  text-decoration: none;
-  color: #111;
-  font-size: 2em;
+  color: #eee;
+  font-size: 1em;
   margin-left: 20px;
-  margin-right: 20px;
   transition: 0.5s;
+  text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
 }
 @media (max-width: 500px) {
   .navigation a {
@@ -233,7 +240,7 @@ footer {
 .home .intro img {
   border-radius: 5px;
   width: 100%;
-  height: 150px;
+  height: 250px;
 }
 @media (max-width: 500px) {
   .home .intro img {
@@ -242,10 +249,11 @@ footer {
   }
 }
 .home .intro h2 {
-  padding: 15px;
+  padding: 55px;
 }
 .home .intro p {
   padding: 0 15px;
+  padding-bottom: 50px;
 }
 .home .diy-images {
   display: flex;
@@ -285,6 +293,7 @@ footer {
 }
 .home .simplify-diy h3 {
   margin-top: 11px;
+  padding: 35px;
 }
 .home .simplify-diy p {
   margin-top: 13px;
