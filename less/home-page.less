@@ -28,7 +28,38 @@
       }
     
     }
-  
+    .about-images {
+        .flexbox;
+        flex-wrap:  wrap;
+        width: 100%;
+        @media @phone {
+            .flexbox;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 28%;
+            margin: 20px 2.5%;
+            border-radius: 20px;
+            height: 100%;
+        }
+        .diy1 {
+            @media @phone {
+                width: 40%;
+            }
+        }
+        .diy2 {
+            @media @phone {
+                width: 40%;
+            }
+        }
+        .diy3 {
+            @media @phone {
+                width: 40%;
+            }
+        }
+    
+    }
     .diy-images {
       display: flex;
       flex-wrap: wrap;
@@ -101,21 +132,23 @@
         }
         
        .btn {
-          .button-bg(linear-gradient(to bottom, #454A59 5%, #81848E 100%), #454A59);
-          border-radius:5px;
+        .button-bg(linear-gradient(to bottom, @pastel-green 5%, @success-green 100%), @pastel-green);
+            border-radius:5px;
             border:1px solid;
+            box-shadow: 10px 10px 8px #888888;
             display: inline-block;
             color:#ffffff;
             font-size:19px;
             font-weight:bold;
-          padding:12px 37px;
-          @media @phone {
+            padding:12px 37px;
+            @media @phone {
             display: flex;
             justify-content: center;
           }
           
           &:hover {
-            .button-bg(linear-gradient(to bottom, #476E9E 5%, #7892C9 100%), #476E9E);
+            .button-bg(linear-gradient(to bottom, @success-green 5%, @pastel-green 100%), @success-green);
+            box-shadow: unset;
         }
        }
       }

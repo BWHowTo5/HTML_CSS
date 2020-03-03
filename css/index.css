@@ -255,6 +255,39 @@ footer {
   padding: 0 15px;
   padding-bottom: 50px;
 }
+.home .about-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .about-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.home .about-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .about-images .diy1 {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .home .about-images .diy2 {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .home .about-images .diy3 {
+    width: 40%;
+  }
+}
 .home .diy-images {
   display: flex;
   flex-wrap: wrap;
@@ -327,10 +360,11 @@ footer {
   margin-bottom: 26px;
 }
 .home .cta .cta-text .btn {
-  background: linear-gradient(to bottom, #454A59 5%, #81848E 100%);
-  background-color: #454A59;
+  background: linear-gradient(to bottom, #7dd181 5%, #4b7f52 100%);
+  background-color: #7dd181;
   border-radius: 5px;
   border: 1px solid;
+  box-shadow: 10px 10px 8px #888888;
   display: inline-block;
   color: #ffffff;
   font-size: 19px;
@@ -344,8 +378,9 @@ footer {
   }
 }
 .home .cta .cta-text .btn:hover {
-  background: linear-gradient(to bottom, #476E9E 5%, #7892C9 100%);
-  background-color: #476E9E;
+  background: linear-gradient(to bottom, #4b7f52 5%, #7dd181 100%);
+  background-color: #4b7f52;
+  box-shadow: unset;
 }
 .home .cta .diy4 {
   width: 46%;
