@@ -29,16 +29,18 @@
     
     }
     .about-images {
-        .flexbox;
+        .flexbox();
+        .centercenter();
         flex-wrap:  wrap;
         width: 100%;
+        padding-bottom: 50px;
         @media @phone {
             .flexbox;
             flex-direction: column;
             align-items: center;
         }
         img {
-            width: 28%;
+            width: 17%;
             margin: 20px 2.5%;
             border-radius: 20px;
             height: 100%;
@@ -145,7 +147,10 @@
             display: flex;
             justify-content: center;
           }
-          
+        a {
+            text-decoration: none;
+            color: @off-white;
+        }
           &:hover {
             .button-bg(linear-gradient(to bottom, @success-green 5%, @pastel-green 100%), @success-green);
             box-shadow: unset;

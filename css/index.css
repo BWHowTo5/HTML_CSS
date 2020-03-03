@@ -222,7 +222,7 @@ p {
 footer {
   align-items: center;
   justify-content: center;
-  color: #111;
+  color: #eee;
   background: #4b7f52;
   padding: 20px 0;
   border: 1px double #b6f9c9;
@@ -257,8 +257,11 @@ footer {
 }
 .home .about-images {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  padding-bottom: 50px;
 }
 @media (max-width: 500px) {
   .home .about-images {
@@ -268,7 +271,7 @@ footer {
   }
 }
 .home .about-images img {
-  width: 28%;
+  width: 17%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
@@ -376,6 +379,10 @@ footer {
     display: flex;
     justify-content: center;
   }
+}
+.home .cta .cta-text .btn a {
+  text-decoration: none;
+  color: #eee;
 }
 .home .cta .cta-text .btn:hover {
   background: linear-gradient(to bottom, #4b7f52 5%, #7dd181 100%);
