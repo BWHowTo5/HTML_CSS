@@ -224,9 +224,8 @@ footer {
   justify-content: center;
   color: #eee;
   background: #4b7f52;
+  width: 100%;
   padding: 20px 0;
-  border: 1px double #b6f9c9;
-  border-radius: 10px;
   display: flex;
 }
 .home .intro {
@@ -257,7 +256,6 @@ footer {
 }
 .home .about-images {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
