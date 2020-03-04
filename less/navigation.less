@@ -9,8 +9,77 @@
     @media @phone {
         position: unset;
     }
+    .responsive{
+        @media @phone {
+            position: relative;
+        }
+        a{
+            @media @phone{
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+        .dropdown{
+            @media @phone{
+                float: none;
+            }
+            .dropbtn{
+                @media @phone{
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+        .dropdown-content{
+            @media @phone{
+                position: relative;
+            }
+        }
+    } 
+   
+    .dropdown{
+        float: left;
+        overflow: hidden;
+
+        .dropbtn{
+            display: none;
+            @media @phone{
+            display: flex;
+            font-size: .25em;
+            border: none;
+            outline: none;
+            color: @off-white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            }
+        }
     
-    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: @off-white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            
+            a{
+                float: none;
+            color: @off-black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+        }
+        &:hover .dropdown-content{
+            display: block;
+        }
+    }
+
     .navtitle{
         .flexbox();
         align-items: baseline;
@@ -21,6 +90,8 @@
             font-size: .25em;
             font-family: @sub-font;
         }
+
+        
     }
 
     nav{
@@ -35,7 +106,9 @@
             padding-top: unset;
         }
     }
-
+    .active {
+        color: @pastel-green;
+    }
         a{
         	color: @nav-font;
         	font-size: 1em;
@@ -45,11 +118,10 @@
             font-family: @mono-font;
             @media @phone {
                 font-size: 1.5em;
+                &:not(:first-child), .dropdown .dropbtn{
+                    display: none;
+                }
             }
+            
         }
-            &:hover{
-        	color:black;
-        	border-bottom: 1px solid @off-black;
-            transition: 0.1s;
-            }
 }
