@@ -8,36 +8,9 @@
     padding-bottom: 10px;
     @media @phone {
         position: unset;
+        justify-content: center;
+        flex-direction: row-reverse;
     }
-    .responsive{
-        @media @phone {
-            position: relative;
-        }
-        a{
-            @media @phone{
-                float: none;
-                display: block;
-                text-align: left;
-            }
-        }
-        .dropdown{
-            @media @phone{
-                float: none;
-            }
-            .dropbtn{
-                @media @phone{
-                    display: block;
-                    width: 100%;
-                    text-align: left;
-                }
-            }
-        }
-        .dropdown-content{
-            @media @phone{
-                position: relative;
-            }
-        }
-    } 
    
     .dropdown{
         float: left;
@@ -47,11 +20,12 @@
             display: none;
             @media @phone{
             display: flex;
-            font-size: .25em;
+            font-size: 2rem;
             border: none;
             outline: none;
             color: @off-white;
-            padding: 14px 16px;
+            font-weight: bolder;
+            padding: 10px;
             background-color: inherit;
             font-family: inherit;
             margin: 0;
@@ -61,19 +35,23 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: @off-white;
+            background-color: #ff00;
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
             
             a{
-                float: none;
+            float: none;
             color: @off-black;
+            font-weight: bolder;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
             text-align: left;
+            &:hover{
+                color: @pastel-green;
             }
+        }
         }
         &:hover .dropdown-content{
             display: block;
