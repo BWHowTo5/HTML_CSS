@@ -16,17 +16,28 @@
 </head>
 
   <body>
-<div class="navigation">
-  <div class="navtitle">
-    <h1>HOW TO</h1><h5>Let's Simplify DIY</h5>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About Us</a>
-    <a href="https://lambdahowto5.netlify.com/signup">Sign Up!</a>
-    <a href="https://lambdahowto5.netlify.com/login">Log In</a>
-  </nav>
-</div>
+    <div class="navigation" id="myTopnav">
+        <div class="navtitle">
+          <h1>HOW TO</h1><h5>Let's Simplify DIY</h5>
+        </div>
+        <nav>
+          
+          <div class="dropdown">
+            <button class="dropbtn">&#9776;
+            </button>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="about.html" class="active">About Us</a>
+              <a href="https://lambdahowto5.netlify.com/login">Sign Up!</a>
+              <a href="https://lambdahowto5.netlify.com/login">Log In</a>
+            </div>
+          </div>
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About Us</a>
+          <a href="https://lambdahowto5.netlify.com/signup">Sign Up!</a>
+          <a href="https://lambdahowto5.netlify.com/login">Log In</a>
+        </nav>
+      </div>
 <div class="container home">
 
   <header class="intro">
@@ -38,23 +49,26 @@
     </header>
 
   <section class="about-images">
-   
-    <figure>
-    <img src="img/Vick.png" class="abimg" alt="Vick Javariz">
-    <figcaption>Vick Javariz</figcaption>
-    </figure>
-    <figure>
-    <img src="img/Caiden.png" class="abimg" alt="Caiden Clark">   
-    <figcaption>Caiden Clark</figcaption>
-    </figure>
-    <figure>
-    <img src="img/Thayne.png" class="abimg" alt="Thayne Allen">
-    <figcaption>Thayne Allen</figcaption>
-    </figure>
-    <figure>
-    <img src="img/Logan.png" class="abimg" alt="Logan Reber">
-    <figcaption>Logan Reber</figcaption>
-    </figure>
+    <div class="top-row">
+       <div>
+           <img src="img/Vick.png" class="abimg" alt="Vick Javariz">
+           <p>Vick Javariz</p>
+       </div>
+       <div>
+            <img src="img/Caiden.png" class="abimg" alt="Caiden Clark">   
+            <p>Caiden Clark</p>
+       </div>
+    </div>
+    <div class="bottom-row">
+        <div>
+            <img src="img/Thayne.png" class="abimg" alt="Thayne Allen">
+            <p>Thayne Allen</p>
+        </div>
+        <div>
+            <img src="img/Logan.png" class="abimg" alt="Logan Reber">
+            <p>Logan Reber</p>
+        </div>
+    </div>
   </section>
 
   
