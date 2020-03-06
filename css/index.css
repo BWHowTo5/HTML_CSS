@@ -343,6 +343,15 @@ footer {
   display: flex;
   justify-content: center;
 }
+.home .about-images .top-row a {
+  text-decoration: none;
+  color: #4b7f52;
+}
+.home .about-images .top-row a:hover {
+  color: #7dd181;
+  font-size: 2.5rem;
+  transition: 0.5s;
+}
 .home .about-images .bottom-row {
   display: flex;
   flex-direction: row;
@@ -361,6 +370,15 @@ footer {
 .home .about-images .bottom-row p {
   display: flex;
   justify-content: center;
+}
+.home .about-images .bottom-row a {
+  text-decoration: none;
+  color: #4b7f52;
+}
+.home .about-images .bottom-row a:hover {
+  color: #7dd181;
+  font-size: 2.5rem;
+  transition: 0.5s;
 }
 .home .diy-images {
   display: flex;
