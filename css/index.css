@@ -226,11 +226,11 @@ p {
 .navigation .navtitle {
   display: flex;
   align-items: baseline;
-  font-size: 3em;
+  font-size: 3rem;
   padding: 10px;
 }
 .navigation .navtitle h5 {
-  font-size: 0.25em;
+  font-size: 0.25rem;
   font-family: 'Bitter', Times;
 }
 .navigation nav {
@@ -252,15 +252,18 @@ p {
 }
 .navigation a {
   color: #eee;
-  font-size: 1em;
+  font-size: 1rem;
   margin-left: 20px;
   transition: 0.5s;
   text-decoration: none;
   font-family: 'Source Code Pro', monospace;
 }
+.navigation a:hover {
+  font-size: 2rem;
+}
 @media (max-width: 500px) {
   .navigation a {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
   .navigation a:not(:first-child),
   .navigation a .dropdown .dropbtn {

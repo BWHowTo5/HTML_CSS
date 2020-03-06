@@ -61,11 +61,11 @@
     .navtitle{
         .flexbox();
         align-items: baseline;
-        font-size: 3em;
+        font-size: 3rem;
         padding: 10px;
 
         h5 {
-            font-size: .25em;
+            font-size: .25rem;
             font-family: @sub-font;
         }
 
@@ -89,13 +89,16 @@
     }
         a{
         	color: @nav-font;
-        	font-size: 1em;
+        	font-size: 1rem;
         	margin-left: 20px;
             transition: 0.5s;
             text-decoration: none;
             font-family: @mono-font;
+            &:hover {
+                font-size: 2rem;
+            }
             @media @phone {
-                font-size: 1.5em;
+                font-size: 1.5rem;
                 &:not(:first-child), .dropdown .dropbtn{
                     display: none;
                 }
