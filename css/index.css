@@ -307,6 +307,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 @media (max-width: 500px) {
   .home .about-images {
@@ -326,11 +327,14 @@ footer {
 }
 @media (max-width: 500px) {
   .home .about-images .top-row {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 .home .about-images .top-row div {
   width: 100%;
+  display: grid;
 }
 .home .about-images .top-row p {
   display: flex;
@@ -342,11 +346,14 @@ footer {
 }
 @media (max-width: 500px) {
   .home .about-images .bottom-row {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
 .home .about-images .bottom-row div {
   width: 100%;
+  display: grid;
 }
 .home .about-images .bottom-row p {
   display: flex;
